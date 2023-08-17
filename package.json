@@ -1,0 +1,84 @@
+{
+  "name": "theme-nextjs-bea",
+  "version": "1.1.0",
+  "engines": {
+    "node": "^18.x",
+    "npm": "^9.x"
+  },
+  "devEngines": {
+    "node": "^18.x",
+    "npm": "^9.x"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "lint-styles": "npx stylelint **.scss",
+    "lint-styles:fix": "npx stylelint **.scss --fix",
+    "prettier": "prettier --check './**/*.(js|ts|tsx|css)'",
+    "prettier:fix": "npm run prettier -- --write --no-list-different",
+    "typecheck": "tsc --noEmit --incremental",
+    "check": "npm run lint && npm run typecheck && npm run lint-styles",
+    "stylelint-check": "stylelint-config-prettier-check",
+    "release": "np --release-draft-only --yolo",
+    "test": "npx playwright test"
+  },
+  "dependencies": {
+    "@hcaptcha/react-hcaptcha": "1.8.1",
+    "@headlessui/react": "1.7.16",
+    "@playwright/test": "^1.33.0",
+    "@prezly/analytics-nextjs": "1.9.0",
+    "@prezly/content-renderer-react-js": "0.30.1",
+    "@prezly/sdk": "16.7.1",
+    "@prezly/story-content-format": "0.62.0",
+    "@prezly/theme-kit-core": "6.4.4",
+    "@prezly/theme-kit-nextjs": "6.4.5",
+    "@prezly/themes-intl-messages": "1.17.0",
+    "@prezly/uploadcare": "2.4.3",
+    "@prezly/uploadcare-image": "0.3.2",
+    "@react-hookz/web": "14.7.1",
+    "@sentry/nextjs": "7.64.0",
+    "algoliasearch": "4.19.1",
+    "classnames": "2.3.2",
+    "modern-normalize": "1.1.0",
+    "next": "13.4.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-instantsearch-dom": "6.40.4",
+    "react-intl": "6.4.4",
+    "social-links": "1.13.8",
+    "tinycolor2": "1.6.0"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "13.4.9",
+    "@prezly/eslint-config": "5.2.0",
+    "@svgr/webpack": "6.5.1",
+    "@types/node": "18.17.5",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "@types/react-instantsearch-core": "6.26.3",
+    "@types/react-instantsearch-dom": "6.12.3",
+    "@types/tinycolor2": "1.4.3",
+    "autoprefixer": "10.4.15",
+    "dotenv": "^16.0.3",
+    "next-logger": "3.0.2",
+    "np": "7.7.0",
+    "postcss": "8.4.28",
+    "prettier": "2.8.8",
+    "sass": "1.65.1",
+    "stylelint": "15.10.2",
+    "typescript": "4.9.5"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prezly/theme-nextjs-bea.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prezly/theme-nextjs-bea/issues"
+  },
+  "homepage": "https://github.com/prezly/theme-nextjs-bea#readme"
+}
